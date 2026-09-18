@@ -44,7 +44,6 @@ services:
     name: taskflow-frontend-client
     runtime: static
     plan: free
-    region: oregon
     rootDir: client
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
@@ -58,3 +57,4 @@ services:
           type: web
           name: taskflow-backend-api
           property: host
+
